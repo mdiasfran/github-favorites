@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    font-size: 62.5%;
+
+    --ff-primary: 'Poppins', sans-serif;
+    --text-color: #303030;
+
+    --hue: 194;
+    --primary-color: hsl(var(--hue), 100%, 63%);
+}
+
+body {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background-color: rgb(235, 244, 248);
+}
+
+body * {
+    font-family: var(--ff-primary);
+}
+
+button {
+    
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+#app {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 2.5rem 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    height: 3.2rem;
+    border: solid 1px #ccc;
+    border-radius: .4rem 0 0 .4rem;
+    padding: 0 .8rem;
+}
+
+.search button {
+    background-color: var(--primary-color);
+    height: 3.2rem;
+    padding: 0 1rem;
+    border-radius: 0 .4rem .4rem 0;
+    border: none;
+
+    cursor: pointer;
+}
+
+.search button:hover {
+    filter: brightness(1.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table * {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+table th {
+    background: var(--primary-color);
+    text-align: left;
+    font-weight: normal;
+    padding: 1.5rem;
+}
+
+td.user img {
+   width: 5rem; 
+   height: 5rem;
+
+   object-fit: cover;
+   border-radius: 50%;
+}
