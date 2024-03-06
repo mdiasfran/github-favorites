@@ -90,6 +90,8 @@ header h1 {
 table {
     width: 100%;
     border-collapse: collapse;
+
+    box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
 }
 
 table * {
@@ -104,10 +106,51 @@ table th {
     padding: 1.5rem;
 }
 
+table th:first-child {
+    border-top-left-radius: .4rem;
+}
+
+table th:last-child {
+    border-top-right-radius: .4rem;
+}
+
+table tr {
+    background: #f5f0f0;
+}
+
+table tr:nth-child(odd) {
+    background: #e0dddd;
+}
+
+table td {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+td.user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 td.user img {
    width: 5rem; 
    height: 5rem;
 
    object-fit: cover;
    border-radius: 50%;
+}
+
+td.user a {
+    text-decoration: none;
+}
+
+td.user a p {
+    font-weight: bold;
+}
+
+td .remove {
+    background: none;
+    border: none;
+    color: red;
 }
